@@ -51,7 +51,7 @@ CREATE TABLE posts (
         REFERENCES users(u_user_id)
         ON DELETE CASCADE,
     p_title VARCHAR2 (80),
-    p_content VARCHAR2 (2000),
+    p_content CLOB,
     p_date_created DATE
 );
 INSERT INTO posts
